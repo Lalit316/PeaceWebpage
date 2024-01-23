@@ -1,3 +1,6 @@
+// Name : Joshi Lalit Prasad
+// Roll No. : M23W0401
+
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
