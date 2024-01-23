@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Peace</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html"><img src="assets/mlogo.png" alt="logo" />Peace</a>
+          </div>
+          <div id="timer"></div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li class="link"><a href="index.html#home">Home</a></li>
+          <li class="link"><a href="index.html#about">About</a></li>
+          <li class="link"><a href="index.html#class">Classes</a></li>
+          <li class="link"><a href="index.html#trainer">Trainers</a></li>
+          <li class="link"><a href="index.html#price">Pricing</a></li>
+          <li class="link"><button class="btn">Contact Us</button></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="container">
+        <div class="content">
+          <div class="logo">
+            <img src="assets/mlogo.png" alt="logo" />Meditation Program
+          </div>
+          <h1>Meditation Booking Form</h1>
+          <form action="#" id="form">
+            <div class="input__row">
+              <div class="input__group">
+                <input type="text" id="firstname" name="firstname" placeholder=" " />
+                <label for="firstname">First Name</label>
+                <span class="error__field"></span>
+              </div>
+              <div class="input__group">
+                <input type="text" id="lastname" name="lastname" placeholder=" " />
+                <label for="lastname">Last Name</label>
+                <span class="error__field"></span>
+              </div>
+            </div>
+            <div class="input__group">
+              <input type="text" id="username" name="username" placeholder=" " />
+              <label for="username">User Name</label>
+              <span class="error__field"></span>
+            </div>
+            <div class="input__group">
+              <input type="text" id="email" name="email" placeholder=" " />
+              <label for="email">Email</label>
+              <span class="error__field"></span>
+            </div>
+            <div class="input__group">
+              <input type="text" id="phone" name="phone" placeholder=" " />
+              <label for="phone">Phone Number</label>
+              <span class="error__field"></span>
+            </div>
+            <div class="input__group">
+              <input type="text" id="address" name="address" placeholder=" " />
+              <label for="address">Address</label>
+              <span class="error__field"></span>
+            </div>
+            <div class="input__group">
+              <input type="text" id="nationality" name="nationality" placeholder=" " />
+              <label for="nationality">Nationality</label>
+              <span class="error__field"></span>
+            </div>
+            <div class="input__group">
+              <input type="text" id="occupation" name="occupation" placeholder=" " required/>
+              <label for="occupation">Occupation</label>
+              <span class="error__field"></span>
+            </div>
+            <div class="input__row">
+              <div class="input__group">
+                <input type="date" id="birthday" name="birthday" placeholder=" " />
+                <label for="birthday">Date of Birth:</label>
+                <span class="error__field"></span>
+              </div>
+              <div class="input__group">
+                <input type="text" id="age" name="age" placeholder=" " />
+                <label for="age">Age</label>
+                <span class="error__field"></span>
+              </div>
+            </div>
+            <div class="input__row">
+              <div class="input__group">
+                <input type="date" id="entryDate" name="entryDate" placeholder=" " />
+                <label for="entryDate">Entry Date</label>
+                <span class="error__field"></span>
+              </div>
+              <div class="input__group">
+                <input type="date" id="returnDate" name="returnDate" placeholder=" " />
+                <label for="returnDate">Return Date</label>
+                <span class="error__field"></span>
+              </div>
+            </div>
+            <div class="input__group">
+              <label for="gender">Gender:</label>
+              <span class="error__field"></span><br>
+            </div>
+            <div class="input__group">
+              <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <fieldset>
+  
+                <legend>Previous Visit</legend>
+                <div class="">
+                <input type="checkbox" id="previousvisitY" name="previousvisit" value="Yes">
+                <label for="previousvisitY">Yes</label><br>
+                <input type="checkbox" id="previousvisitN" name="previousvisit" value="No">
+                <label for="previousvisitN">No</label>
+                <span class="error__field"></span>
+              </div>
+            </fieldset>
+            <fieldset>
+                <legend>Blood Group</legend>
+              
+                <div>
+                  <input type="radio" id="OPositive" name="BloodGroup" value="OPositive" checked />
+                  <label for="OPositive">O +ve</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="ONegative" name="BloodGroup" value="ONegative" />
+                  <label for="ONegative">O -ve</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="BPositive" name="BloodGroup" value="BPositive" />
+                  <label for="BPositive">B +ve</label>
+                </div>
+                <div>
+                    <input type="radio" id="BNegative" name="BloodGroup" value="BNegative" />
+                    <label for="BNegative">B -ve</label>
+                  </div>
+              </fieldset>
+              <div class="input__group">
+                <input type="textarea" id="textarea" name="Message" placeholder=" " required/>
+                <label for="textarea">Message</label>
+                <span class="error__field"></span>
+              </div>
+            <button type="button" onclick="displayFormData()">Register</button>
+          </form>
+        </div>
+        <div class="image"></div>
+      </div>
+
+       <!-- Textarea for displaying JSON data -->
+       <div>
+        <label for="json-display">JSON Display:</label>
+        <textarea id="json-display" class="json-display" readonly></textarea>
+      </div>
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="index.html"><img src="assets/mlogo.png" alt="logo" />Peace</a>
+          </div>
+          <p>
+            Take the first step towards a healthier, stronger you with our
+            unbeatable pricing plans. Let's sweat, achieve, and conquer
+            together!
+          </p>
+          <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <div class="footer__links">
+            <a href="#">Business</a>
+            <a href="#">Franchise</a>
+            <a href="#">Partnership</a>
+            <a href="#">Network</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>About Us</h4>
+          <div class="footer__links">
+            <a href="#">Blogs</a>
+            <a href="#">Security</a>
+            <a href="#">Careers</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <div class="footer__links">
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">BMI Calculator</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2023 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
